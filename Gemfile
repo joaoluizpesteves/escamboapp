@@ -9,6 +9,7 @@ gem 'rails-i18n'
 gem 'foreman'
 gem 'devise'
 gem 'devise-i18n'
+gem 'bootstrap_sb_admin_base_v2'
 #***************** fimjl *****************
 
 # Use sqlite3 as the database for Active Record
@@ -44,17 +45,20 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
-  #***************** incluidojl *****************
+#***************** incluidojl *****************
   gem 'better_errors'
-  #***************** fimjl *****************
+#***************** fimjl *****************
 
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+#***************** incluidojl *****************
+  gem 'rails-erd'
+#***************** fimjl *****************
+
 end
 

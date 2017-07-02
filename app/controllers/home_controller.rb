@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    raise "erro"
+##    raise "erro"
   end
 end
