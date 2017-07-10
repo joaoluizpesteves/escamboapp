@@ -1,15 +1,22 @@
 Rails.application.routes.draw do
+
+  #incluído JL
+  ##root 'home#index'
+  root 'site/home#index'
+  #fimjl
+
+  namespace :site do
+    get 'home', to: 'home#index'
+  end
   namespace :backoffice do
-    get 'dashboard/index'
+    get 'dashboard', to: 'dashboard#index'
   end
 
   devise_for :admins
   devise_for :members
   get 'home/index'
 
-  #incluído JL
-  root 'home#index'
-  #fimjl
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
